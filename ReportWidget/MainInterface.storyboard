@@ -7,7 +7,7 @@
         <!--Today View Controller-->
         <scene sceneID="cwh-vc-ff4">
             <objects>
-                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" sceneMemberID="viewController">
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="com_giovannibalestra_iTunesConnectReports_ReportWidget" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S3S-Oj-5AN">
                         <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,7 +36,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="280" height="60"/>
                     <connections>
-                        <outlet property="answerLabel" destination="b8D-dQ-qbC" id="q7g-G4-XS8"/>
+                        <outlet property="answerLabel" destination="b8D-dQ-qbC" id="1wg-gL-Sre"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>

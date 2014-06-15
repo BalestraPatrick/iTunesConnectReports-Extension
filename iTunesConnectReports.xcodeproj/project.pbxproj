@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AED02B3A193E962F0052C448 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AED02B39193E962F0052C448 /* main.m */; };
-		AED02B3D193E962F0052C448 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AED02B3C193E962F0052C448 /* AppDelegate.m */; };
-		AED02B40193E962F0052C448 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AED02B3F193E962F0052C448 /* ViewController.m */; };
+		86BBA00D194DE476003E023F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BBA00C194DE476003E023F /* AppDelegate.swift */; };
+		86BBA010194DE4E3003E023F /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BBA00F194DE4E3003E023F /* TodayViewController.swift */; };
+		86BBA012194DE611003E023F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BBA011194DE611003E023F /* ViewController.swift */; };
 		AED02B43193E962F0052C448 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED02B41193E962F0052C448 /* Main.storyboard */; };
 		AED02B45193E962F0052C448 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED02B44193E962F0052C448 /* Images.xcassets */; };
 		AED02B60193E98900052C448 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AED02B5F193E98900052C448 /* NotificationCenter.framework */; };
-		AED02B66193E98900052C448 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AED02B65193E98900052C448 /* TodayViewController.m */; };
 		AED02B68193E98900052C448 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED02B67193E98900052C448 /* MainInterface.storyboard */; };
 		AED02B6B193E98900052C448 /* com.giovannibalestra.iTunesConnectReports.ReportWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AED02B5E193E98900052C448 /* com.giovannibalestra.iTunesConnectReports.ReportWidget.appex */; };
 /* End PBXBuildFile section */
@@ -50,20 +49,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		86BBA00C194DE476003E023F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		86BBA00F194DE4E3003E023F /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		86BBA011194DE611003E023F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AED02B34193E962F0052C448 /* iTunesConnectReports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesConnectReports.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED02B38193E962F0052C448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AED02B39193E962F0052C448 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AED02B3B193E962F0052C448 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AED02B3C193E962F0052C448 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AED02B3E193E962F0052C448 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AED02B3F193E962F0052C448 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AED02B42193E962F0052C448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AED02B44193E962F0052C448 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AED02B5E193E98900052C448 /* com.giovannibalestra.iTunesConnectReports.ReportWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = com.giovannibalestra.iTunesConnectReports.ReportWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED02B5F193E98900052C448 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		AED02B63193E98900052C448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AED02B64193E98900052C448 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
-		AED02B65193E98900052C448 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		AED02B67193E98900052C448 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,10 +111,8 @@
 		AED02B36193E962F0052C448 /* iTunesConnectReports */ = {
 			isa = PBXGroup;
 			children = (
-				AED02B3B193E962F0052C448 /* AppDelegate.h */,
-				AED02B3C193E962F0052C448 /* AppDelegate.m */,
-				AED02B3E193E962F0052C448 /* ViewController.h */,
-				AED02B3F193E962F0052C448 /* ViewController.m */,
+				86BBA00C194DE476003E023F /* AppDelegate.swift */,
+				86BBA011194DE611003E023F /* ViewController.swift */,
 				AED02B41193E962F0052C448 /* Main.storyboard */,
 				AED02B44193E962F0052C448 /* Images.xcassets */,
 				AED02B37193E962F0052C448 /* Supporting Files */,
@@ -131,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				AED02B38193E962F0052C448 /* Info.plist */,
-				AED02B39193E962F0052C448 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -139,8 +131,7 @@
 		AED02B61193E98900052C448 /* ReportWidget */ = {
 			isa = PBXGroup;
 			children = (
-				AED02B64193E98900052C448 /* TodayViewController.h */,
-				AED02B65193E98900052C448 /* TodayViewController.m */,
+				86BBA00F194DE4E3003E023F /* TodayViewController.swift */,
 				AED02B67193E98900052C448 /* MainInterface.storyboard */,
 				AED02B62193E98900052C448 /* Supporting Files */,
 			);
@@ -256,9 +247,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AED02B40193E962F0052C448 /* ViewController.m in Sources */,
-				AED02B3D193E962F0052C448 /* AppDelegate.m in Sources */,
-				AED02B3A193E962F0052C448 /* main.m in Sources */,
+				86BBA012194DE611003E023F /* ViewController.swift in Sources */,
+				86BBA00D194DE476003E023F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AED02B66193E98900052C448 /* TodayViewController.m in Sources */,
+				86BBA010194DE4E3003E023F /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,9 +370,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iTunesConnectReports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -391,15 +384,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iTunesConnectReports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
 		AED02B6E193E98900052C448 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -409,12 +405,14 @@
 				METAL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "com.giovannibalestra.iTunesConnectReports.$(TARGET_NAME:rfc1034identifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		AED02B6F193E98900052C448 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ReportWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
