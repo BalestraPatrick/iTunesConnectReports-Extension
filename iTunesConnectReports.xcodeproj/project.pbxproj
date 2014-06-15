@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AED02B3A193E962F0052C448 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AED02B39193E962F0052C448 /* main.m */; };
+		AED02B3D193E962F0052C448 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AED02B3C193E962F0052C448 /* AppDelegate.m */; };
+		AED02B40193E962F0052C448 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AED02B3F193E962F0052C448 /* ViewController.m */; };
+		AED02B43193E962F0052C448 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED02B41193E962F0052C448 /* Main.storyboard */; };
+		AED02B45193E962F0052C448 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED02B44193E962F0052C448 /* Images.xcassets */; };
+		AED02B60193E98900052C448 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AED02B5F193E98900052C448 /* NotificationCenter.framework */; };
+		AED02B66193E98900052C448 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AED02B65193E98900052C448 /* TodayViewController.m */; };
+		AED02B68193E98900052C448 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED02B67193E98900052C448 /* MainInterface.storyboard */; };
+		AED02B6B193E98900052C448 /* com.giovannibalestra.iTunesConnectReports.ReportWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AED02B5E193E98900052C448 /* com.giovannibalestra.iTunesConnectReports.ReportWidget.appex */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AED02B69193E98900052C448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AED02B2C193E962F0052C448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AED02B5D193E98900052C448;
+			remoteInfo = ReportWidget;
+		};
+		AED02B6C193E98900052C448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AED02B2C193E962F0052C448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AED02B5D193E98900052C448;
+			remoteInfo = ReportWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AED02B71193E98900052C448 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AED02B6B193E98900052C448 /* com.giovannibalestra.iTunesConnectReports.ReportWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AED02B34193E962F0052C448 /* iTunesConnectReports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesConnectReports.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AED02B38193E962F0052C448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AED02B39193E962F0052C448 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AED02B3B193E962F0052C448 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AED02B3C193E962F0052C448 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AED02B3E193E962F0052C448 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AED02B3F193E962F0052C448 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AED02B42193E962F0052C448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AED02B44193E962F0052C448 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AED02B5E193E98900052C448 /* com.giovannibalestra.iTunesConnectReports.ReportWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = com.giovannibalestra.iTunesConnectReports.ReportWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AED02B5F193E98900052C448 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		AED02B63193E98900052C448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AED02B64193E98900052C448 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		AED02B65193E98900052C448 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		AED02B67193E98900052C448 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AED02B31193E962F0052C448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AED02B5B193E98900052C448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED02B60193E98900052C448 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ED2E4DBD7234B7199E46D51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AED02B5F193E98900052C448 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AED02B2B193E962F0052C448 = {
+			isa = PBXGroup;
+			children = (
+				AED02B36193E962F0052C448 /* iTunesConnectReports */,
+				AED02B61193E98900052C448 /* ReportWidget */,
+				AED02B35193E962F0052C448 /* Products */,
+				1ED2E4DBD7234B7199E46D51 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AED02B35193E962F0052C448 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AED02B34193E962F0052C448 /* iTunesConnectReports.app */,
+				AED02B5E193E98900052C448 /* com.giovannibalestra.iTunesConnectReports.ReportWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AED02B36193E962F0052C448 /* iTunesConnectReports */ = {
+			isa = PBXGroup;
+			children = (
+				AED02B3B193E962F0052C448 /* AppDelegate.h */,
+				AED02B3C193E962F0052C448 /* AppDelegate.m */,
+				AED02B3E193E962F0052C448 /* ViewController.h */,
+				AED02B3F193E962F0052C448 /* ViewController.m */,
+				AED02B41193E962F0052C448 /* Main.storyboard */,
+				AED02B44193E962F0052C448 /* Images.xcassets */,
+				AED02B37193E962F0052C448 /* Supporting Files */,
+			);
+			path = iTunesConnectReports;
+			sourceTree = "<group>";
+		};
+		AED02B37193E962F0052C448 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AED02B38193E962F0052C448 /* Info.plist */,
+				AED02B39193E962F0052C448 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AED02B61193E98900052C448 /* ReportWidget */ = {
+			isa = PBXGroup;
+			children = (
+				AED02B64193E98900052C448 /* TodayViewController.h */,
+				AED02B65193E98900052C448 /* TodayViewController.m */,
+				AED02B67193E98900052C448 /* MainInterface.storyboard */,
+				AED02B62193E98900052C448 /* Supporting Files */,
+			);
+			path = ReportWidget;
+			sourceTree = "<group>";
+		};
+		AED02B62193E98900052C448 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AED02B63193E98900052C448 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AED02B33193E962F0052C448 /* iTunesConnectReports */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AED02B54193E962F0052C448 /* Build configuration list for PBXNativeTarget "iTunesConnectReports" */;
+			buildPhases = (
+				AED02B30193E962F0052C448 /* Sources */,
+				AED02B31193E962F0052C448 /* Frameworks */,
+				AED02B32193E962F0052C448 /* Resources */,
+				AED02B71193E98900052C448 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AED02B6A193E98900052C448 /* PBXTargetDependency */,
+				AED02B6D193E98900052C448 /* PBXTargetDependency */,
+			);
+			name = iTunesConnectReports;
+			productName = iTunesConnectReports;
+			productReference = AED02B34193E962F0052C448 /* iTunesConnectReports.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AED02B5D193E98900052C448 /* ReportWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AED02B70193E98900052C448 /* Build configuration list for PBXNativeTarget "ReportWidget" */;
+			buildPhases = (
+				AED02B5A193E98900052C448 /* Sources */,
+				AED02B5B193E98900052C448 /* Frameworks */,
+				AED02B5C193E98900052C448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReportWidget;
+			productName = ReportWidget;
+			productReference = AED02B5E193E98900052C448 /* com.giovannibalestra.iTunesConnectReports.ReportWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AED02B2C193E962F0052C448 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Patrick Balestra";
+				TargetAttributes = {
+					AED02B33193E962F0052C448 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					AED02B5D193E98900052C448 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = AED02B2F193E962F0052C448 /* Build configuration list for PBXProject "iTunesConnectReports" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AED02B2B193E962F0052C448;
+			productRefGroup = AED02B35193E962F0052C448 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AED02B33193E962F0052C448 /* iTunesConnectReports */,
+				AED02B5D193E98900052C448 /* ReportWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AED02B32193E962F0052C448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED02B43193E962F0052C448 /* Main.storyboard in Resources */,
+				AED02B45193E962F0052C448 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AED02B5C193E98900052C448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED02B68193E98900052C448 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AED02B30193E962F0052C448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED02B40193E962F0052C448 /* ViewController.m in Sources */,
+				AED02B3D193E962F0052C448 /* AppDelegate.m in Sources */,
+				AED02B3A193E962F0052C448 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AED02B5A193E98900052C448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED02B66193E98900052C448 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AED02B6A193E98900052C448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AED02B5D193E98900052C448 /* ReportWidget */;
+			targetProxy = AED02B69193E98900052C448 /* PBXContainerItemProxy */;
+		};
+		AED02B6D193E98900052C448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AED02B5D193E98900052C448 /* ReportWidget */;
+			targetProxy = AED02B6C193E98900052C448 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AED02B41193E962F0052C448 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AED02B42193E962F0052C448 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AED02B52193E962F0052C448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AED02B53193E962F0052C448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AED02B55193E962F0052C448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = iTunesConnectReports/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AED02B56193E962F0052C448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = iTunesConnectReports/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AED02B6E193E98900052C448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReportWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "com.giovannibalestra.iTunesConnectReports.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AED02B6F193E98900052C448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ReportWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "com.giovannibalestra.iTunesConnectReports.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AED02B2F193E962F0052C448 /* Build configuration list for PBXProject "iTunesConnectReports" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AED02B52193E962F0052C448 /* Debug */,
+				AED02B53193E962F0052C448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AED02B54193E962F0052C448 /* Build configuration list for PBXNativeTarget "iTunesConnectReports" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AED02B55193E962F0052C448 /* Debug */,
+				AED02B56193E962F0052C448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AED02B70193E98900052C448 /* Build configuration list for PBXNativeTarget "ReportWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AED02B6E193E98900052C448 /* Debug */,
+				AED02B6F193E98900052C448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AED02B2C193E962F0052C448 /* Project object */;
+}
