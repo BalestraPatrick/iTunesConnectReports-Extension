@@ -28,10 +28,9 @@ class ViewController: UIViewController, UIWebViewDelegate {
     }
 
     func webViewDidFinishLoad(webView: UIWebView) {
-        
-        let source: NSString! = webView.stringByEvaluatingJavaScriptFromString("document.body.innerHTML")
-        if (source) {
-            if (source.containsString("haveTodays")) {
+        let sourceOptional: NSString! = webView.stringByEvaluatingJavaScriptFromString("document.body.innerHTML")
+        if let source = sourceOptional {
+            if source.containsString("haveTodays") {
                 var range = source.rangeOfString("haveTodays")
                 range = NSMakeRange(range.location, range.length + 7)
                 
@@ -42,10 +41,10 @@ class ViewController: UIViewController, UIWebViewDelegate {
                 let newStringSplitArray = NSArray(array: newStringSplit)
                 newString = newStringSplitArray.componentsJoinedByString("")
                 
-                let values: NSArray? = newString.componentsSeparatedByString(":")
-                if (values) {
-                    if (values!.firstObject.isEqualToString("haveTodays")) {
-                        if (values!.objectAtIndex(1).isEqualToString("false")) {
+                let valuesOptional: NSArray? = newString.componentsSeparatedByString(":")
+                if let values = valuesOptional {
+                    if values.firstObject.isEqualToString("haveTodays") {
+                        if values.objectAtIndex(1).isEqualToString("false") {
                             // NOT RELEASED YET
                             NSLog("Not yet")
                             answerLabel.text = "No."
@@ -62,7 +61,6 @@ class ViewController: UIViewController, UIWebViewDelegate {
                             })
                     }
                 }
-                
             }
         }
     }
