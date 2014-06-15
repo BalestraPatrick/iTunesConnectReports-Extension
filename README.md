@@ -8,3 +8,5 @@ I've added the default iTunes Connect app icon too to give it a better look that
 If you have any idea or improvement, send a pull request.
 
 For any question, <a href="http://twitter.com/BalestraPatrick" target="_blank">@BalestraPatrick</a>.
+
+<img src="screenshot.png" width="320px">
