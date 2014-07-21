@@ -36,6 +36,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		AE4C01D2197D78EF00D9870D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AED02B71193E98900052C448 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -166,6 +176,7 @@
 				AED02B31193E962F0052C448 /* Frameworks */,
 				AED02B32193E962F0052C448 /* Resources */,
 				AED02B71193E98900052C448 /* Embed App Extensions */,
+				AE4C01D2197D78EF00D9870D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -380,6 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Giovanni Balestra (AGJ9QSR8V8)";
 				INFOPLIST_FILE = iTunesConnectReports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -391,6 +403,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Giovanni Balestra (AGJ9QSR8V8)";
 				INFOPLIST_FILE = iTunesConnectReports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -400,6 +413,7 @@
 		AED02B6E193E98900052C448 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Giovanni Balestra (AGJ9QSR8V8)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -415,6 +429,7 @@
 		AED02B6F193E98900052C448 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Giovanni Balestra (AGJ9QSR8V8)";
 				INFOPLIST_FILE = ReportWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;

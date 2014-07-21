@@ -7,7 +7,12 @@
 		<key>ReportWidget.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>1</integer>
+		</dict>
+		<key>iTunesConnectKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>iTunesConnectReports.xcscheme</key>
 		<dict>
@@ -17,6 +22,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>AE4C01B3197D78EF00D9870D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AE4C01BD197D78EF00D9870D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>AED02B33193E962F0052C448</key>
 		<dict>
 			<key>primary</key>

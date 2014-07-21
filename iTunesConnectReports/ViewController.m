@@ -22,6 +22,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *answerLabel;
 
+
 @end
 
 @implementation ViewController
@@ -31,59 +32,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    NSURL *statusURL = [[NSURL alloc] initWithString:@"http://appfigures.com/itcstatus"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:statusURL];
-    
-    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
-    self.webView.delegate = self;
-    [self.webView loadRequest:request];
-    [self.view addSubview:self.webView];
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    [self checkStatus];
     
     self.answerLabel.alpha = 0.0;
-
     
 }
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView {
-    
-    NSString *source = [webView stringByEvaluatingJavaScriptFromString:@"document.body.innerHTML"];
-    
-    if (source) {
-        if ([source containsString:@"haveTodays"]) {
-            NSRange range = [source rangeOfString:@"haveTodays"];
-            range.length +=7;
+- (void)checkStatus {
+    NSURL *url = [NSURL URLWithString:@"http://verbanounihockey.ch/patrick/iTC"];
+    NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (!error) {
+            NSError *jsonError = nil;
+            NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
             
-            NSString *newString = [source substringWithRange:range];
-            
-            NSCharacterSet *replaceCharachter = [NSCharacterSet characterSetWithCharactersInString:@"\""];
-            newString = [[newString componentsSeparatedByCharactersInSet:replaceCharachter] componentsJoinedByString: @""];
-            
-            NSArray *values = [newString componentsSeparatedByString:@":"];
-            if (values) {
-                if ([[values firstObject] isEqualToString:@"haveTodays"]) {
-                    if ([[values objectAtIndex:1] isEqualToString:@"false"]) {
-                        // NOT RELEASED YET
-                        NSLog(@"Not yet");
-                        self.answerLabel.text = @"No.";
-                        self.answerLabel.textColor = [UIColor redColor];
-                    } else {
-                        // YEAH, REPORTS ALREADY RELEASED
-                        NSLog(@"YEAH");
-                        self.answerLabel.text = @"Yes.";
-                        self.answerLabel.textColor = [UIColor greenColor];
-                    }
-                    [webView stopLoading];
-                    [UIView animateWithDuration:0.25 animations:^{
-                        self.answerLabel.alpha = 1.0;
-                    }];
+            if (!jsonError) {
+                if (dictionary[@"success"]) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        self.answerLabel.text = dictionary[@"success"] ? @"Yes" : @"No";
+                        [UIView animateWithDuration:0.25 animations:^{
+                            self.answerLabel.alpha = 1.0;
+                        }];
+                        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+                    });
                 }
             }
-            
         }
-    }
+    }];
     
+    [task resume];
 }
-
 
 @end

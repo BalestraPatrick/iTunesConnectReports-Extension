@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TodayViewController : UIViewController <UIWebViewDelegate>
+@interface TodayViewController : UIViewController
 
 @end

@@ -21,9 +21,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *answerLabel;
 
-@property (strong, nonatomic) UIWebView *webView;
-
-
 @end
 
 @implementation TodayViewController
@@ -31,68 +28,59 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setPreferredContentSize:CGSizeMake(300, 60)];
+    [self setPreferredContentSize:CGSizeMake(300, 40)];
     
-    NSURL *statusURL = [[NSURL alloc] initWithString:@"http://appfigures.com/itcstatus"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:statusURL];
+    UIVisualEffectView *effectView = [[UIVisualEffectView alloc] initWithEffect:[UIVibrancyEffect notificationCenterVibrancyEffect]];
+    effectView.frame = self.view.bounds;
+    effectView.autoresizingMask = self.view.autoresizingMask;
     
-    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
-    self.webView.delegate = self;
-    [self.webView loadRequest:request];
-    [self.view addSubview:self.webView];
+    __strong UIView *oldView = self.view;
+    
+    self.view = effectView;
+    
+    [effectView.contentView addSubview:oldView];
+    
+    self.view.tintColor = [UIColor lightTextColor];
+    
+    [self checkStatus];
     
     self.answerLabel.alpha = 0.0;
     
-    
-}
-
-- (UIEdgeInsets)widgetMarginInsetsForProposedMarginInsets:(UIEdgeInsets)defaultMarginInsets {
-    defaultMarginInsets.bottom = 5;
-    return defaultMarginInsets;
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
-    self.answerLabel.alpha = 0.0;
+    [UIView animateWithDuration:0.25 animations:^{
+        self.answerLabel.alpha = 0.0;
+    }];
 }
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView {
-    
-    NSString *source = [webView stringByEvaluatingJavaScriptFromString:@"document.body.innerHTML"];
-    
-    if (source) {
-        if ([source containsString:@"haveTodays"]) {
-            NSRange range = [source rangeOfString:@"haveTodays"];
-            range.length +=7;
+- (UIEdgeInsets)widgetMarginInsetsForProposedMarginInsets:(UIEdgeInsets)defaultMarginInsets {
+    defaultMarginInsets.bottom = 0;
+    defaultMarginInsets.left = 0;
+    return defaultMarginInsets;
+}
+
+- (void)checkStatus {
+    NSURL *url = [NSURL URLWithString:@"http://verbanounihockey.ch/patrick/iTC"];
+    NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (!error) {
+            NSError *jsonError = nil;
+            NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
             
-            NSString *newString = [source substringWithRange:range];
-            
-            NSCharacterSet *replaceCharachter = [NSCharacterSet characterSetWithCharactersInString:@"\""];
-            newString = [[newString componentsSeparatedByCharactersInSet:replaceCharachter] componentsJoinedByString: @""];
-            
-            NSArray *values = [newString componentsSeparatedByString:@":"];
-            if (values) {
-                if ([[values firstObject] isEqualToString:@"haveTodays"]) {
-                    if ([[values objectAtIndex:1] isEqualToString:@"false"]) {
-                        // NOT RELEASED YET
-                        NSLog(@"Not yet");
-                        self.answerLabel.text = @"No.";
-                        self.answerLabel.textColor = [UIColor redColor];
-                    } else {
-                        // YEAH, REPORTS ALREADY RELEASED
-                        NSLog(@"YEAH");
-                        self.answerLabel.text = @"Yes.";
-                        self.answerLabel.textColor = [UIColor greenColor];
-                    }
-                    [webView stopLoading];
-                    [UIView animateWithDuration:0.25 animations:^{
-                        self.answerLabel.alpha = 1.0;
-                    }];
+            if (!jsonError) {
+                if (dictionary[@"success"]) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        self.answerLabel.text = dictionary[@"success"] ? @"Yes" : @"No";
+                        [UIView animateWithDuration:0.25 animations:^{
+                            self.answerLabel.alpha = 1.0;
+                        }];
+                    });
                 }
             }
-            
         }
-    }
+    }];
     
+    [task resume];
 }
 
 @end
