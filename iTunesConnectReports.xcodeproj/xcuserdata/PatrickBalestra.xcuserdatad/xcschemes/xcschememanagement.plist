@@ -9,11 +9,6 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>iTunesConnectKit.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
 		<key>iTunesConnectReports.xcscheme</key>
 		<dict>
 			<key>orderHint</key>

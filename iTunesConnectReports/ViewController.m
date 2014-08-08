@@ -6,27 +6,15 @@
 //  Copyright (c) 2014 Patrick Balestra. All rights reserved.
 //
 
-/*
- 
- This project scrapes the appfigures.com/itcstatus to see if the iTunes Connect reports are avaiable for today. I didn't find an official API or a better way
- to do that so if you find one, just let me know.
- App icon is property of Apple.
- 
-*/
-
 #import "ViewController.h"
 
 @interface ViewController ()
 
-@property (strong, nonatomic) UIWebView *webView;
-
 @property (weak, nonatomic) IBOutlet UILabel *answerLabel;
-
 
 @end
 
 @implementation ViewController
-
 
             
 - (void)viewDidLoad {
@@ -40,7 +28,7 @@
 }
 
 - (void)checkStatus {
-    NSURL *url = [NSURL URLWithString:@"http://verbanounihockey.ch/patrick/iTC"];
+    NSURL *url = [NSURL URLWithString:@"http://www.patrickbalestra.com/iTC"];
     NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (!error) {
             NSError *jsonError = nil;
@@ -49,7 +37,9 @@
             if (!jsonError) {
                 if (dictionary[@"success"]) {
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        self.answerLabel.text = dictionary[@"success"] ? @"Yes" : @"No";
+                        NSNumber *haveTodays = [dictionary valueForKey:@"haveTodays"];
+                        self.answerLabel.text = haveTodays.boolValue ? @"Yes" : @"No";
+                        self.answerLabel.textColor = haveTodays.boolValue ? [UIColor greenColor] : [UIColor redColor];
                         [UIView animateWithDuration:0.25 animations:^{
                             self.answerLabel.alpha = 1.0;
                         }];
