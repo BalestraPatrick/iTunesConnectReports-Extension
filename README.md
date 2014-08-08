@@ -10,4 +10,4 @@ A Mac OS X Yosemite widget of is available in the <a href="http://github.com/Bal
 
 For any question, <a href="http://twitter.com/BalestraPatrick" target="_blank">@BalestraPatrick</a>.
 
-<img src="screenshot.png" width="320px">
+<img src="Screenshot.png" width="320px">
