@@ -6,7 +6,7 @@ I didn't find a nice API to check this. I usually use the <a href="http://www.ap
 
 If you have any idea or improvement, send a pull request.
 
-A Mac OS X Yosemite widget version is available in the <a href="http://github.com/BalestraPatrick/iTunesConnectReports-Extension/mac">Mac OS X Yosemite branch</a>.
+A Mac OS X Yosemite widget version is available in the <a href="http://github.com/BalestraPatrick/iTunesConnectReports-Extension/tree/mac">Mac OS X Yosemite branch</a>.
 
 For any question, <a href="http://twitter.com/BalestraPatrick" target="_blank">@BalestraPatrick</a>.
 
