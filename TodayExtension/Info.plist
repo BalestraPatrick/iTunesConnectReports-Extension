@@ -7,13 +7,13 @@
 	<key>CFBundleDisplayName</key>
 	<string>iTunes Connect Reports</string>
 	<key>CFBundleExecutable</key>
-	<string>${EXECUTABLE_NAME}</string>
+	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>${PRODUCT_NAME}</string>
+	<string>com.giovannibalestra.iTunesConnectReports.$(PRODUCT_NAME:rfc1034identifier)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>${PRODUCT_NAME}</string>
+	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
 	<string>XPC!</string>
 	<key>CFBundleShortVersionString</key>
@@ -24,10 +24,14 @@
 	<string>1</string>
 	<key>NSExtension</key>
 	<dict>
-		<key>NSExtensionMainStoryboard</key>
-		<string>MainInterface</string>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.widget-extension</string>
+		<key>NSExtensionPrincipalClass</key>
+		<string>$(PRODUCT_MODULE_NAME).TodayViewController</string>
+		<key>com.apple.notificationcenter.widget.description</key>
+		<string>iTunes Connect Reports</string>
 	</dict>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2014 Patrick Balestra. All rights reserved.</string>
 </dict>
 </plist>

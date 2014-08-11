@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ReportWidget.xcscheme</key>
+		<key>TodayExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
@@ -17,27 +17,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>AE4C01B3197D78EF00D9870D</key>
+		<key>AE2F12BA197FE902007133D5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AE4C01BD197D78EF00D9870D</key>
+		<key>AE2F12CE197FE902007133D5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AED02B33193E962F0052C448</key>
+		<key>AE2F12E2197FEA8B007133D5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AED02B49193E962F0052C448</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AED02B5D193E98900052C448</key>
+		<key>AE4F09B71997CD2F00C67591</key>
 		<dict>
 			<key>primary</key>
 			<true/>

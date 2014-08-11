@@ -15,9 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AED02B5D193E98900052C448"
-               BuildableName = "com.giovannibalestra.iTunesConnectReports.ReportWidget.appex"
-               BlueprintName = "ReportWidget"
+               BlueprintIdentifier = "AE4F09B71997CD2F00C67591"
+               BuildableName = "TodayExtension.appex"
+               BlueprintName = "TodayExtension"
                ReferencedContainer = "container:iTunesConnectReports.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,7 +29,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AED02B33193E962F0052C448"
+               BlueprintIdentifier = "AE2F12BA197FE902007133D5"
                BuildableName = "iTunesConnectReports.app"
                BlueprintName = "iTunesConnectReports"
                ReferencedContainer = "container:iTunesConnectReports.xcodeproj">
@@ -44,6 +44,15 @@
       buildConfiguration = "Debug">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AE4F09B71997CD2F00C67591"
+            BuildableName = "TodayExtension.appex"
+            BlueprintName = "TodayExtension"
+            ReferencedContainer = "container:iTunesConnectReports.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = ""
@@ -58,7 +67,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AED02B33193E962F0052C448"
+            BlueprintIdentifier = "AE2F12BA197FE902007133D5"
             BuildableName = "iTunesConnectReports.app"
             BlueprintName = "iTunesConnectReports"
             ReferencedContainer = "container:iTunesConnectReports.xcodeproj">
@@ -72,11 +81,12 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
-      debugDocumentVersioning = "YES">
+      debugDocumentVersioning = "YES"
+      askForAppToLaunch = "Yes">
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AED02B33193E962F0052C448"
+            BlueprintIdentifier = "AE2F12BA197FE902007133D5"
             BuildableName = "iTunesConnectReports.app"
             BlueprintName = "iTunesConnectReports"
             ReferencedContainer = "container:iTunesConnectReports.xcodeproj">
